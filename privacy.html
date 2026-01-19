@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - SMS & Drip for Twilio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 antialiased">
+    <div class="max-w-3xl mx-auto py-12 px-6">
+      <a
+        href="index.html"
+        class="inline-flex items-center text-sm text-indigo-600 hover:text-indigo-800 mb-8 font-medium"
+      >
+        <svg
+          class="h-4 w-4 mr-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+        Back to Home
+      </a>
+
+      <h1 class="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
+      <p class="text-gray-500 mb-10">
+        <strong>Last Updated:</strong> January 9, 2026
+      </p>
+
+      <div class="prose prose-indigo max-w-none">
+        <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+          1. Introduction
+        </h3>
+        <p class="text-gray-600 mb-6">
+          We ("SMS & Drip for Twilio") value your privacy. This policy outlines
+          how we protect your data.
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+          2. Data We Collect
+        </h3>
+        <p class="text-gray-600 mb-4">
+          We store the minimum data necessary for automation:
+        </p>
+        <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+          <li><strong>Account Info:</strong> Your Monday.com Account ID.</li>
+          <li>
+            <strong>Tokens:</strong> <strong>Encrypted</strong> OAuth tokens to
+            perform actions on your behalf.
+          </li>
+          <li>
+            <strong>Twilio Credentials:</strong>
+            <ul class="list-circle pl-6 mt-2 space-y-1">
+              <li>
+                <strong>Account SID & Phone Number:</strong> Stored to identify
+                your environment and send messages.
+              </li>
+              <li>
+                <strong>Auth Token:</strong> Stored using
+                <strong>AES-256 encryption</strong>. We never store your Auth
+                Token in plain text.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Automation Data:</strong> We process board data (phone
+            numbers, messages) <strong>temporarily</strong> to execute your
+            recipes. We do not permanently store board content.
+          </li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+          3. Data Retention & Uninstall
+        </h3>
+        <p class="text-gray-600 mb-6">
+          <strong>Your Data, Your Control.</strong> If you uninstall the
+          application, our system receives a webhook that triggers the
+          <strong>immediate and permanent deletion</strong> of your credentials,
+          tokens, and configuration from our database.
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+          4. Third Parties
+        </h3>
+        <p class="text-gray-600 mb-4">
+          We use the following trusted infrastructure providers:
+        </p>
+        <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+          <li>
+            <strong>Monday.com:</strong> Hosting & Platform Integration (Monday
+            Code).
+          </li>
+          <li><strong>Twilio:</strong> To execute SMS delivery.</li>
+          <li><strong>Supabase:</strong> Secure Primary Database.</li>
+          <li><strong>Upstash:</strong> Secure Session & Queue Management.</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Security</h3>
+        <p class="text-gray-600 mb-6">
+          All data in transit is protected via HTTPS/TLS. Sensitive secrets
+          (Auth Tokens & OAuth Tokens) are stored using
+          <strong>AES-256 encryption</strong> at rest.
+        </p>
+
+        <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">6. Contact</h3>
+        <p class="text-gray-600">
+          For privacy concerns, please contact us at:
+          <a
+            href="mailto:mofadlalla10@gmail.com"
+            class="text-indigo-600 hover:text-indigo-800"
+            >mofadlalla10@gmail.com</a
+          >
+        </p>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <p class="text-center text-sm text-gray-400">
+          &copy; 2026 SMS & Drip for Twilio. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
