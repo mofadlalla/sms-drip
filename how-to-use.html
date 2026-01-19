@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Use SMS & Drip</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans p-8">
+    <div class="max-w-4xl mx-auto bg-white p-10 rounded-xl shadow-sm">
+      <!-- Header -->
+      <h1 class="text-4xl font-bold mb-8 text-center" style="color: #3f51b5">
+        How to Use SMS & Drip
+      </h1>
+
+      <!-- Getting Started -->
+      <section class="mb-12">
+        <h2
+          class="text-2xl font-bold mb-4 flex items-center gap-2"
+          style="color: #9d50bb"
+        >
+          1. Getting Started
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Welcome to SMS & Drip! To start sending messages directly from
+          Monday.com, you first need to add the Board View to your board.
+        </p>
+        <ol class="list-decimal list-inside space-y-2 mb-6 ml-2">
+          <li>Open your board in Monday.com.</li>
+          <li>Click the <strong>+</strong> icon next to your views tab.</li>
+          <li>
+            Search for <strong>"SMS & Drip"</strong> and click
+            <strong>Add View</strong>.
+          </li>
+        </ol>
+        <div
+          class="border-2 border-dashed border-gray-300 rounded-lg h-48 flex items-center justify-center bg-gray-50 text-gray-400"
+        >
+          Screenshot: Adding the Board View
+        </div>
+      </section>
+
+      <!-- Connecting Twilio -->
+      <section class="mb-12">
+        <h2
+          class="text-2xl font-bold mb-4 flex items-center gap-2"
+          style="color: #9d50bb"
+        >
+          2. Connecting Twilio
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          You'll need your Twilio <strong>Account SID</strong> and
+          <strong>Auth Token</strong> to connect your account.
+        </p>
+        <ul class="list-disc list-inside space-y-2 mb-6 ml-2">
+          <li>
+            Log in to your
+            <a
+              href="https://console.twilio.com"
+              target="_blank"
+              class="text-indigo-600 underline"
+              >Twilio Console</a
+            >.
+          </li>
+          <li>Copy the SID and Auth Token from the dashboard.</li>
+          <li>
+            In the SMS & Drip app settings, paste these credentials and hit
+            <strong>Save</strong>.
+          </li>
+        </ul>
+        <div
+          class="border-2 border-dashed border-gray-300 rounded-lg h-48 flex items-center justify-center bg-gray-50 text-gray-400"
+        >
+          Screenshot: Twilio Credentials Input
+        </div>
+      </section>
+
+      <!-- Creating Your First Campaign -->
+      <section class="mb-12">
+        <h2
+          class="text-2xl font-bold mb-4 flex items-center gap-2"
+          style="color: #9d50bb"
+        >
+          3. Creating Your First Campaign
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Use our visual builder to design your drip campaigns.
+        </p>
+        <div class="space-y-4">
+          <p>
+            <strong>Step 1:</strong> Click "New Campaign" and give it a name.
+          </p>
+          <p>
+            <strong>Step 2:</strong> Add specific triggers (e.g., "Status
+            changes to 'Won'").
+          </p>
+          <p>
+            <strong>Step 3:</strong> Drag and drop SMS blocks to create your
+            sequence.
+          </p>
+        </div>
+        <div
+          class="mt-6 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center bg-gray-50 text-gray-400"
+        >
+          Screenshot: Visual Campaign Builder
+        </div>
+      </section>
+
+      <!-- Automation Features -->
+      <section class="mb-12">
+        <h2
+          class="text-2xl font-bold mb-4 flex items-center gap-2"
+          style="color: #9d50bb"
+        >
+          4. Automation Features
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div
+            class="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition-all"
+          >
+            <h3 class="font-bold text-lg mb-2" style="color: #3f51b5">
+              Stop on Status Change
+            </h3>
+            <p class="text-sm">
+              Automatically stop sending messages if the item's status changes
+              on your board (e.g., from "Lead" to "Qualified").
+            </p>
+          </div>
+          <div
+            class="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition-all"
+          >
+            <h3 class="font-bold text-lg mb-2" style="color: #3f51b5">
+              Auto-stop on Reply
+            </h3>
+            <p class="text-sm">
+              If a user replies to one of your messages, the sequence will
+              automatically pause to allow for personal follow-up.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Compliance -->
+      <section class="mb-12">
+        <h2
+          class="text-2xl font-bold mb-4 flex items-center gap-2"
+          style="color: #9d50bb"
+        >
+          5. Compliance
+        </h2>
+        <p class="mb-4 leading-relaxed">We handle compliance automatically.</p>
+        <p class="mb-4">
+          If a recipient replies <strong>STOP</strong>,
+          <strong>UNSUBSCRIBE</strong>, or <strong>CANCEL</strong>:
+        </p>
+        <ul class="list-disc list-inside space-y-1 mb-6 ml-2 text-gray-700">
+          <li>They are instantly removed from all future campaigns.</li>
+          <li>Their status on your board is updated to "Unsubscribed".</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
