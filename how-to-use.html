@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="icon.png" type="image/png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to Use SMS & Drip</title>
@@ -14,7 +14,39 @@
         How to Use SMS & Drip
       </h1>
 
-      <!-- Getting Started -->
+      <!-- Video Walkthrough -->
+      <div class="mb-12">
+        <div
+          class="aspect-w-16 aspect-h-9 border-2 border-dashed border-gray-300 rounded-lg bg-gray-50 flex items-center justify-center h-64"
+        >
+          <div class="text-center">
+            <svg
+              class="mx-auto h-12 w-12 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span class="mt-2 block text-sm font-medium text-gray-500"
+              >Video Walkthrough (Loom)</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 1. Getting Started -->
       <section class="mb-12">
         <h2
           class="text-2xl font-bold mb-4 flex items-center gap-2"
@@ -23,141 +55,194 @@
           1. Getting Started
         </h2>
         <p class="mb-4 leading-relaxed">
-          Welcome to SMS & Drip! To start sending messages directly from
-          Monday.com, you first need to add the Board View to your board.
+          Start by locating the app in your Monday.com workspace.
         </p>
-        <ol class="list-decimal list-inside space-y-2 mb-6 ml-2">
-          <li>Open your board in Monday.com.</li>
-          <li>Click the <strong>+</strong> icon next to your views tab.</li>
-          <li>
-            Search for <strong>"SMS & Drip"</strong> and click
-            <strong>Add View</strong>.
-          </li>
+        <ol class="list-decimal list-inside space-y-2 mb-6 ml-2 text-gray-700">
+          <li>Navigate to <strong>"Workspace apps"</strong> in the sidebar.</li>
+          <li>Find <strong>SMS & Drip</strong> and open it.</li>
+          <li>Click <strong>"Authorize"</strong> to grant permissions.</li>
         </ol>
-        <div
-          class="border-2 border-dashed border-gray-300 rounded-lg h-48 flex items-center justify-center bg-gray-50 text-gray-400"
-        >
-          Screenshot: Adding the Board View
-        </div>
       </section>
 
-      <!-- Connecting Twilio -->
+      <!-- 2. Workflow Features -->
       <section class="mb-12">
         <h2
-          class="text-2xl font-bold mb-4 flex items-center gap-2"
+          class="text-2xl font-bold mb-6 flex items-center gap-2"
           style="color: #9d50bb"
         >
-          2. Connecting Twilio
+          2. Features
         </h2>
-        <p class="mb-4 leading-relaxed">
-          You'll need your Twilio <strong>Account SID</strong> and
-          <strong>Auth Token</strong> to connect your account.
-        </p>
-        <ul class="list-disc list-inside space-y-2 mb-6 ml-2">
-          <li>
-            Log in to your
-            <a
-              href="https://console.twilio.com"
-              target="_blank"
-              class="text-indigo-600 underline"
-              >Twilio Console</a
-            >.
-          </li>
-          <li>Copy the SID and Auth Token from the dashboard.</li>
-          <li>
-            In the SMS & Drip app settings, paste these credentials and hit
-            <strong>Save</strong>.
-          </li>
-        </ul>
-        <div
-          class="border-2 border-dashed border-gray-300 rounded-lg h-48 flex items-center justify-center bg-gray-50 text-gray-400"
-        >
-          Screenshot: Twilio Credentials Input
-        </div>
-      </section>
 
-      <!-- Creating Your First Campaign -->
-      <section class="mb-12">
-        <h2
-          class="text-2xl font-bold mb-4 flex items-center gap-2"
-          style="color: #9d50bb"
-        >
-          3. Creating Your First Campaign
-        </h2>
-        <p class="mb-4 leading-relaxed">
-          Use our visual builder to design your drip campaigns.
-        </p>
-        <div class="space-y-4">
-          <p>
-            <strong>Step 1:</strong> Click "New Campaign" and give it a name.
-          </p>
-          <p>
-            <strong>Step 2:</strong> Add specific triggers (e.g., "Status
-            changes to 'Won'").
-          </p>
-          <p>
-            <strong>Step 3:</strong> Drag and drop SMS blocks to create your
-            sequence.
-          </p>
-        </div>
-        <div
-          class="mt-6 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center bg-gray-50 text-gray-400"
-        >
-          Screenshot: Visual Campaign Builder
-        </div>
-      </section>
+        <!-- Feature A: Send Campaign -->
+        <div class="mb-10 pl-4 border-l-4 border-indigo-100">
+          <h3 class="text-xl font-bold mb-4" style="color: #3f51b5">
+            A. Send Campaign (Sequence Starter)
+          </h3>
 
-      <!-- Automation Features -->
-      <section class="mb-12">
-        <h2
-          class="text-2xl font-bold mb-4 flex items-center gap-2"
-          style="color: #9d50bb"
-        >
-          4. Automation Features
-        </h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div
-            class="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition-all"
-          >
-            <h3 class="font-bold text-lg mb-2" style="color: #3f51b5">
-              Stop on Status Change
-            </h3>
-            <p class="text-sm">
-              Automatically stop sending messages if the item's status changes
-              on your board (e.g., from "Lead" to "Qualified").
+          <div class="mb-6">
+            <h4 class="font-semibold text-gray-800 mb-2">
+              Part 1: Create Campaign (Dashboard)
+            </h4>
+            <p class="mb-3 text-sm text-gray-600">
+              First, build your drip sequence visually.
             </p>
+            <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
+              <li>Open the <strong>SMS & Drip</strong> app dashboard.</li>
+              <li>Click <strong>"New Campaign"</strong> and give it a name.</li>
+              <li>Add your SMS blocks and delays.</li>
+            </ul>
+            <div
+              class="border-2 border-dashed border-gray-300 rounded-lg h-32 flex items-center justify-center bg-gray-50 text-gray-400 text-sm"
+            >
+              Screenshot: Dashboard Campaign Builder
+            </div>
           </div>
-          <div
-            class="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition-all"
-          >
-            <h3 class="font-bold text-lg mb-2" style="color: #3f51b5">
-              Auto-stop on Reply
-            </h3>
-            <p class="text-sm">
-              If a user replies to one of your messages, the sequence will
-              automatically pause to allow for personal follow-up.
+
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2">
+              Part 2: Configure Automation (Workflow)
+            </h4>
+            <p class="mb-3 text-sm text-gray-600">
+              Next, trigger this campaign from your board.
             </p>
+            <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
+              <li>Go to <strong>Mondy.com Workflows</strong> (Automations).</li>
+              <li>Select your trigger (e.g., "Status changes to...").</li>
+              <li>
+                Choose action: <strong>"SMS & Drip: Sequence Starter"</strong>.
+              </li>
+              <li>
+                Map required fields:
+                <ul class="list-none ml-6 mt-1 text-sm text-gray-600 space-y-1">
+                  <li>
+                    • <strong>Columns:</strong> Map Board ID, Item ID, and Phone
+                    Column.
+                  </li>
+                  <li>
+                    • <strong>Settings:</strong> Select Twilio Account and your
+                    created Campaign.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div
+              class="border-2 border-dashed border-gray-300 rounded-lg h-32 flex items-center justify-center bg-gray-50 text-gray-400 text-sm"
+            >
+              Screenshot: Workflow Action Configuration
+            </div>
           </div>
         </div>
+
+        <!-- Feature B: Stop Campaign -->
+        <div class="mb-10 pl-4 border-l-4 border-indigo-100">
+          <h3 class="text-xl font-bold mb-4" style="color: #3f51b5">
+            B. Stop Campaign (Smart Stopper)
+          </h3>
+          <p class="mb-3 text-sm text-gray-600">
+            Cancel active campaigns when an item's status changes.
+          </p>
+          <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
+            <li>
+              In Workflows, select your stop trigger (e.g., "Status changes to
+              Done").
+            </li>
+            <li>
+              Choose action: <strong>"SMS & Drip: Smart Stopper"</strong>.
+            </li>
+            <li>
+              This immediately stops all scheduled messages for that item.
+            </li>
+          </ul>
+          <div
+            class="border-2 border-dashed border-gray-300 rounded-lg h-32 flex items-center justify-center bg-gray-50 text-gray-400 text-sm"
+          >
+            Screenshot: Smart Stopper Action
+          </div>
+        </div>
+
+        <!-- Feature C: Send One Message -->
+        <div class="pl-4 border-l-4 border-indigo-100">
+          <h3 class="text-xl font-bold mb-4" style="color: #3f51b5">
+            C. Send One Message
+          </h3>
+          <p class="mb-3 text-sm text-gray-600">
+            Send an ad-hoc message via automation.
+          </p>
+          <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
+            <li>In Workflows, select your trigger.</li>
+            <li>Choose action: <strong>"SMS & Drip: Send Message"</strong>.</li>
+            <li>
+              Configure Twilio Account and type your message directly in the
+              action.
+            </li>
+          </ul>
+          <div
+            class="border-2 border-dashed border-gray-300 rounded-lg h-32 flex items-center justify-center bg-gray-50 text-gray-400 text-sm"
+          >
+            Screenshot: Send Message Action
+          </div>
+        </div>
       </section>
 
-      <!-- Compliance -->
+      <!-- 3. Replies & Webhooks (Crucial for Compliance) -->
       <section class="mb-12">
         <h2
           class="text-2xl font-bold mb-4 flex items-center gap-2"
           style="color: #9d50bb"
         >
-          5. Compliance
+          3. Replies & Webhooks
         </h2>
-        <p class="mb-4 leading-relaxed">We handle compliance automatically.</p>
-        <p class="mb-4">
-          If a recipient replies <strong>STOP</strong>,
-          <strong>UNSUBSCRIBE</strong>, or <strong>CANCEL</strong>:
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+          <p class="text-sm text-yellow-800">
+            <strong>Important:</strong> We can only enforce compliance
+            (STOP/UNSUBSCRIBE) if we receive the replies. This requires a
+            properly configured webhook.
+          </p>
+        </div>
+
+        <p class="mb-4 leading-relaxed text-gray-700">
+          Our system attempts to auto-configure your Twilio number. If you have
+          an existing webhook, we will <strong>NOT</strong> override it.
         </p>
-        <ul class="list-disc list-inside space-y-1 mb-6 ml-2 text-gray-700">
-          <li>They are instantly removed from all future campaigns.</li>
-          <li>Their status on your board is updated to "Unsubscribed".</li>
-        </ul>
+
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+          <p class="mb-2 font-semibold">Manual Configuration:</p>
+          <p class="mb-2 text-sm text-gray-600">
+            If replies are not working, manually set the "Messaging Webhook" URL
+            in your Twilio Console to:
+          </p>
+          <code
+            class="block p-3 rounded text-sm break-all bg-gray-100 text-gray-800 border border-gray-200"
+          >
+            https://live1-service-33080281-d3a8e938.us.monday.app/api/twilio/reply
+          </code>
+        </div>
+      </section>
+
+      <!-- 4. Compliance -->
+      <section class="mb-8">
+        <h2
+          class="text-2xl font-bold mb-4 flex items-center gap-2"
+          style="color: #9d50bb"
+        >
+          4. Compliance
+        </h2>
+        <p class="mb-4 leading-relaxed text-gray-700">
+          Once webhooks are active, we handle compliance automatically.
+        </p>
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+          <p class="font-semibold mb-2">Opt-Out Keywords:</p>
+          <ul class="list-none space-y-2 mb-2 text-sm text-gray-600">
+            <li>
+              If a user replies with <strong>STOP</strong>,
+              <strong>UNSUBSCRIBE</strong>, or <strong>CANCEL</strong>:
+            </li>
+            <li class="pl-4">✓ Future messages are blocked immediately.</li>
+            <li class="pl-4">
+              ✓ Item status on your board updates to "Unsubscribed".
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   </body>
