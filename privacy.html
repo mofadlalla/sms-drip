@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="icon.png" type="image/png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy - SMS & Drip for Twilio</title>
@@ -59,7 +59,7 @@
           We store the minimum data necessary for automation:
         </p>
         <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
-          <li><strong>Account Info:</strong> Your Monday.com Account ID.</li>
+          <li><strong>Account Info:</strong> Your monday.com Account ID.</li>
           <li>
             <strong>Tokens:</strong> <strong>Encrypted</strong> OAuth tokens to
             perform actions on your behalf.
@@ -68,13 +68,10 @@
             <strong>Twilio Credentials:</strong>
             <ul class="list-circle pl-6 mt-2 space-y-1">
               <li>
-                <strong>Account SID & Phone Number:</strong> Stored to identify
-                your environment and send messages.
-              </li>
-              <li>
-                <strong>Auth Token:</strong> Stored using
-                <strong>AES-256 encryption</strong>. We never store your Auth
-                Token in plain text.
+                <strong>Storage:</strong> Your Twilio Account SID and Auth Token
+                are stored securely within
+                <strong>monday.com's encrypted storage</strong>. We do not store
+                these credentials in our own database.
               </li>
             </ul>
           </li>
@@ -103,8 +100,8 @@
         </p>
         <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
           <li>
-            <strong>Monday.com:</strong> Hosting & Platform Integration (Monday
-            Code).
+            <strong>monday.com:</strong> Hosting & Platform Integration (monday
+            code).
           </li>
           <li><strong>Twilio:</strong> To execute SMS delivery.</li>
           <li><strong>Supabase:</strong> Secure Primary Database.</li>
@@ -114,7 +111,7 @@
         <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Security</h3>
         <p class="text-gray-600 mb-6">
           All data in transit is protected via HTTPS/TLS. Sensitive secrets
-          (Auth Tokens & OAuth Tokens) are stored using
+          (Auth Tokens) are stored using
           <strong>AES-256 encryption</strong> at rest.
         </p>
 
