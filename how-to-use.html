@@ -51,12 +51,16 @@
           1. Getting Started
         </h2>
         <p class="mb-4 leading-relaxed">
-          Start by locating the app in your Monday.com workspace.
+          Start by locating the app in your monday.com workspace.
         </p>
         <ol class="list-decimal list-inside space-y-2 mb-6 ml-2 text-gray-700">
           <li>Navigate to <strong>"Workspace apps"</strong> in the sidebar.</li>
-          <li>Find <strong>SMS & Drip</strong> and open it.</li>
-          <li>Click <strong>"Authorize"</strong> to grant permissions.</li>
+          <li>
+            Find <strong>SMS & Drip: Campaign Dashboard</strong> and open it.
+          </li>
+          <li>
+            Click <strong>"Authorize SMS & Drip"</strong> to grant permissions.
+          </li>
         </ol>
       </section>
 
@@ -106,8 +110,8 @@
               Next, trigger this campaign from your board.
             </p>
             <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
-              <li>Go to <strong>Mondy.com Workflows</strong> (Automations).</li>
-              <li>Select your trigger (e.g., "Status changes to...").</li>
+              <li>Create a new monday.com <strong>Workflow</strong>.</li>
+              <li>Select your trigger (e.g., "When status changes to...").</li>
               <li>
                 Choose action: <strong>"SMS & Drip: Sequence Starter"</strong>.
               </li>
@@ -119,8 +123,8 @@
                     Column.
                   </li>
                   <li>
-                    • <strong>Settings:</strong> Select Twilio Account and your
-                    created Campaign.
+                    • <strong>Settings:</strong> Select Twilio account and your
+                    created Drip campaign.
                   </li>
                 </ul>
               </li>
@@ -146,10 +150,8 @@
             Cancel active campaigns when an item's status changes.
           </p>
           <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
-            <li>
-              In Workflows, select your stop trigger (e.g., "Status changes to
-              Done").
-            </li>
+            <li>Create a new monday.com <strong>Workflow</strong>.</li>
+            <li>Select your trigger (e.g., "When status changes to...").</li>
             <li>
               Choose action: <strong>"SMS & Drip: Smart Stopper"</strong>.
             </li>
@@ -177,11 +179,21 @@
             Send an ad-hoc message via automation.
           </p>
           <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
-            <li>In Workflows, select your trigger.</li>
+            <li>Create a new monday.com <strong>Workflow</strong>.</li>
+            <li>Select your trigger (e.g., "When status changes to...").</li>
             <li>Choose action: <strong>"SMS & Drip: Send Message"</strong>.</li>
             <li>
-              Configure Twilio Account and type your message directly in the
-              action.
+              Map required fields:
+              <ul class="list-none ml-6 mt-1 text-sm text-gray-600 space-y-1">
+                <li>
+                  • <strong>Columns:</strong> Map Board ID, Item ID, and Phone
+                  Column.
+                </li>
+                <li>
+                  • <strong>Settings:</strong> Select Twilio account and type
+                  your message directly in the action.
+                </li>
+              </ul>
             </li>
           </ul>
           <div
