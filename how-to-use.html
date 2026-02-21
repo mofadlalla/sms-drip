@@ -5,18 +5,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to Use SMS & Drip</title>
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="./style.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+      }
+    </style>
   </head>
-  <body class="bg-gray-50 text-gray-800 font-sans p-8">
-    <div class="max-w-4xl mx-auto bg-white p-10 rounded-xl shadow-sm">
+  <body
+    class="bg-gradient-to-br from-gray-50 to-indigo-50/30 text-gray-800 antialiased min-h-screen"
+  >
+    <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <!-- Header -->
-      <h1 class="text-4xl font-bold mb-8 text-center" style="color: #3f51b5">
-        How to Use SMS & Drip
-      </h1>
+      <div class="text-center mb-12">
+        <h1 class="text-5xl font-extrabold mb-4 tracking-tight gradient-text">
+          How to Use SMS & Drip
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Welcome to SMS & Drip! Follow this guide to set up your account, build
+          automated campaigns, and master your messaging workflows on
+          monday.com.
+        </p>
+      </div>
 
       <!-- Video Walkthrough -->
-      <div class="mb-12">
-        <div class="rounded-lg overflow-hidden shadow-lg">
+      <div
+        class="mb-16 transform transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl rounded-2xl overflow-hidden shadow-xl border border-gray-200/50 bg-white p-2"
+      >
+        <div class="rounded-xl overflow-hidden bg-gray-100">
           <div
             style="
               position: relative;
@@ -36,6 +69,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
+                border-radius: 0.75rem;
               "
             ></iframe>
           </div>
@@ -43,227 +77,618 @@
       </div>
 
       <!-- 1. Getting Started -->
-      <section class="mb-12">
-        <h2
-          class="text-2xl font-bold mb-4 flex items-center gap-2"
-          style="color: #9d50bb"
-        >
-          1. Getting Started
+      <section
+        class="glass-card rounded-2xl shadow-sm border border-gray-200/60 p-8 mb-8 transition-all duration-300 hover:shadow-md relative overflow-hidden group"
+      >
+        <div
+          class="absolute top-0 left-0 w-1.5 h-full bg-indigo-500 rounded-l-2xl transform origin-left transition-transform group-hover:scale-y-110"
+        ></div>
+
+        <h2 class="text-2xl font-bold mb-6 flex items-center text-gray-900">
+          <span
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100 text-indigo-700 text-lg mr-4 pb-0.5"
+            >1</span
+          >
+          Getting Started
         </h2>
-        <p class="mb-4 leading-relaxed">
-          Start by locating the app in your monday.com workspace.
+        <p class="mb-5 text-gray-600 leading-relaxed text-lg">
+          Start by locating the app in your monday.com workspace to begin your
+          integration.
         </p>
-        <ol class="list-decimal list-inside space-y-2 mb-6 ml-2 text-gray-700">
-          <li>Navigate to <strong>"Workspace apps"</strong> in the sidebar.</li>
-          <li>
-            Find <strong>SMS & Drip: Campaign Dashboard</strong> and open it.
-          </li>
-          <li>
-            Click <strong>"Authorize SMS & Drip"</strong> to grant permissions.
-          </li>
-        </ol>
+        <div
+          class="bg-gray-50/80 rounded-xl p-6 border border-gray-100 shadow-inner"
+        >
+          <ol class="space-y-4">
+            <li class="flex text-gray-700 items-start">
+              <span class="text-indigo-400 mr-3 mt-1">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span
+                >Navigate to
+                <strong class="text-gray-900 font-semibold"
+                  >"Workspace apps"</strong
+                >
+                in the standard sidebar.</span
+              >
+            </li>
+            <li class="flex text-gray-700 items-start">
+              <span class="text-indigo-400 mr-3 mt-1">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span
+                >Find
+                <strong class="text-gray-900 font-semibold"
+                  >SMS & Drip: Campaign Dashboard</strong
+                >
+                and click to open it.</span
+              >
+            </li>
+            <li class="flex text-gray-700 items-start">
+              <span class="text-indigo-400 mr-3 mt-1">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span
+                >Click
+                <strong class="text-gray-900 font-semibold text-indigo-600"
+                  >"Authorize SMS & Drip"</strong
+                >
+                to securely grant board permissions.</span
+              >
+            </li>
+          </ol>
+        </div>
       </section>
 
       <!-- 2. Workflow Features -->
-      <section class="mb-12">
-        <h2
-          class="text-2xl font-bold mb-6 flex items-center gap-2"
-          style="color: #9d50bb"
-        >
-          2. Features
+      <section
+        class="glass-card rounded-2xl shadow-sm border border-gray-200/60 p-8 mb-8 transition-all duration-300 hover:shadow-md relative overflow-hidden group"
+      >
+        <div
+          class="absolute top-0 left-0 w-1.5 h-full bg-purple-500 rounded-l-2xl transform origin-left transition-transform group-hover:scale-y-110"
+        ></div>
+
+        <h2 class="text-2xl font-bold mb-8 flex items-center text-gray-900">
+          <span
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 text-purple-700 text-lg mr-4 pb-0.5"
+            >2</span
+          >
+          Workflow Features
         </h2>
 
         <!-- Feature A: Send Campaign -->
-        <div class="mb-10 pl-4 border-l-4 border-indigo-100">
-          <h3 class="text-xl font-bold mb-4" style="color: #3f51b5">
-            A. Send Campaign (Sequence Starter)
-          </h3>
-
-          <div class="mb-6">
-            <h4 class="font-semibold text-gray-800 mb-2">
-              Part 1: Create Campaign (Dashboard)
-            </h4>
-            <p class="mb-3 text-sm text-gray-600">
-              First, build your drip sequence visually.
-            </p>
-            <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
-              <li>Open the <strong>SMS & Drip</strong> app dashboard.</li>
-              <li>Click <strong>"New Campaign"</strong> and give it a name.</li>
-              <li>Add your SMS blocks and delays.</li>
-            </ul>
-            <div
-              class="rounded-lg overflow-hidden border border-gray-200 shadow-sm"
-            >
-              <img
-                src="campaign-builder.png"
-                alt="Dashboard Campaign Builder"
-                class="w-full h-auto"
-              />
+        <div class="mb-12">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="p-2 bg-indigo-50 text-indigo-600 rounded-lg">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                ></path>
+              </svg>
             </div>
+            <h3 class="text-xl font-bold text-gray-900">
+              A. Send Campaign (Sequence Starter)
+            </h3>
           </div>
 
-          <div>
-            <h4 class="font-semibold text-gray-800 mb-2">
-              Part 2: Configure Automation (Workflow)
-            </h4>
-            <p class="mb-3 text-sm text-gray-600">
-              Next, trigger this campaign from your board.
-            </p>
-            <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
-              <li>Create a new monday.com <strong>Workflow</strong>.</li>
-              <li>Select your trigger (e.g., "When status changes to...").</li>
-              <li>
-                Choose action: <strong>"SMS & Drip: Sequence Starter"</strong>.
-              </li>
-              <li>
-                Map required fields:
-                <ul class="list-none ml-6 mt-1 text-sm text-gray-600 space-y-1">
-                  <li>
-                    • <strong>Columns:</strong> Map Board ID, Item ID, and Phone
-                    Column.
-                  </li>
-                  <li>
-                    • <strong>Settings:</strong> Select Twilio account and your
-                    created Drip campaign.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div
-              class="rounded-lg overflow-hidden border border-gray-200 shadow-sm"
-            >
-              <img
-                src="sequence-starter.png"
-                alt="Workflow Action Configuration"
-                class="w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!-- Feature B: Stop Campaign -->
-        <div class="mb-10 pl-4 border-l-4 border-indigo-100">
-          <h3 class="text-xl font-bold mb-4" style="color: #3f51b5">
-            B. Stop Campaign (Smart Stopper)
-          </h3>
-          <p class="mb-3 text-sm text-gray-600">
-            Cancel active campaigns when an item's status changes.
-          </p>
-          <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
-            <li>Create a new monday.com <strong>Workflow</strong>.</li>
-            <li>Select your trigger (e.g., "When status changes to...").</li>
-            <li>
-              Choose action: <strong>"SMS & Drip: Smart Stopper"</strong>.
-            </li>
-            <li>
-              This immediately stops all scheduled messages for that item.
-            </li>
-          </ul>
-          <div
-            class="rounded-lg overflow-hidden border border-gray-200 shadow-sm"
-          >
-            <img
-              src="sequence-stopper.png"
-              alt="Smart Stopper Action"
-              class="w-full h-auto"
-            />
-          </div>
-        </div>
-
-        <!-- Feature C: Send One Message -->
-        <div class="pl-4 border-l-4 border-indigo-100">
-          <h3 class="text-xl font-bold mb-4" style="color: #3f51b5">
-            C. Send One Message
-          </h3>
-          <p class="mb-3 text-sm text-gray-600">
-            Send an ad-hoc message via automation.
-          </p>
-          <ul class="list-disc list-inside space-y-1 mb-4 text-gray-700">
-            <li>Create a new monday.com <strong>Workflow</strong>.</li>
-            <li>Select your trigger (e.g., "When status changes to...").</li>
-            <li>Choose action: <strong>"SMS & Drip: Send Message"</strong>.</li>
-            <li>
-              Map required fields:
-              <ul class="list-none ml-6 mt-1 text-sm text-gray-600 space-y-1">
-                <li>
-                  • <strong>Columns:</strong> Map Board ID, Item ID, and Phone
-                  Column.
+          <div class="ml-11 border-l-2 border-gray-100 pl-6 space-y-10">
+            <!-- Part 1 -->
+            <div>
+              <div
+                class="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider rounded-full mb-3"
+              >
+                Part 1
+              </div>
+              <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                Create Campaign (Dashboard)
+              </h4>
+              <p class="mb-4 text-gray-600">
+                First, build your drip sequence visually within our intuitive
+                dashboard.
+              </p>
+              <ul class="space-y-2 mb-6 text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-gray-400 mr-2">•</span>
+                  <p>Open the <strong>SMS & Drip</strong> app dashboard.</p>
                 </li>
-                <li>
-                  • <strong>Settings:</strong> Select Twilio account and type
-                  your message directly in the action.
+                <li class="flex items-start">
+                  <span class="text-gray-400 mr-2">•</span>
+                  <p>
+                    Click <strong>"New Campaign"</strong> and give it a
+                    memorable name.
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-gray-400 mr-2">•</span>
+                  <p>
+                    Add your SMS blocks, setup personalized text, and configure
+                    timing delays.
+                  </p>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <div
-            class="rounded-lg overflow-hidden border border-gray-200 shadow-sm"
-          >
-            <img
-              src="send-message.png"
-              alt="Send Message Action"
-              class="w-full h-auto"
-            />
+              <div
+                class="rounded-xl overflow-hidden border border-gray-200/70 shadow-md transform transition-transform hover:scale-[1.02] duration-300"
+              >
+                <img
+                  src="campaign-builder.png"
+                  alt="Dashboard Campaign Builder"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div>
+              <div
+                class="inline-block px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wider rounded-full mb-3"
+              >
+                Part 2
+              </div>
+              <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                Configure Automation (Workflow)
+              </h4>
+              <p class="mb-4 text-gray-600">
+                Next, seamlessly trigger this campaign directly from your board
+                data.
+              </p>
+
+              <div
+                class="bg-gray-50 rounded-xl p-6 border border-gray-200/60 mb-6"
+              >
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-center">
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-gray-400 mr-3"
+                    ></span
+                    >Create a new monday.com <strong>Workflow</strong>.
+                  </li>
+                  <li class="flex items-center">
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-gray-400 mr-3"
+                    ></span
+                    >Select your trigger (e.g., "When status changes to...").
+                  </li>
+                  <li class="flex items-center">
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-indigo-500 mr-3"
+                    ></span
+                    >Choose action:
+                    <strong>"SMS & Drip: Sequence Starter"</strong>.
+                  </li>
+                </ul>
+
+                <div
+                  class="mt-5 bg-white border border-gray-100 rounded-lg p-4 shadow-sm"
+                >
+                  <p class="font-semibold text-gray-800 mb-2 text-sm">
+                    Map required fields:
+                  </p>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                      <svg
+                        class="w-4 h-4 text-green-500 mt-0.5 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <strong>Columns:</strong> Map Board ID, Item ID, and Phone
+                      Column.
+                    </li>
+                    <li class="flex items-start">
+                      <svg
+                        class="w-4 h-4 text-green-500 mt-0.5 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <strong>Settings:</strong> Select Twilio account and your
+                      created Drip campaign.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="rounded-xl overflow-hidden border border-gray-200/70 shadow-md transform transition-transform hover:scale-[1.02] duration-300"
+              >
+                <img
+                  src="sequence-starter.png"
+                  alt="Workflow Action Configuration"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-gray-100 mb-10" />
+
+        <!-- Feature B: Stop Campaign -->
+        <div class="mb-12">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="p-2 bg-red-50 text-red-500 rounded-lg">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">
+              B. Stop Campaign (Smart Stopper)
+            </h3>
+          </div>
+          <div class="ml-11">
+            <p class="mb-4 text-gray-600">
+              Cancel active campaigns instantly when an item's status changes
+              (e.g., when a lead replies or converts).
+            </p>
+            <ul
+              class="space-y-2 mb-6 text-gray-700 bg-gray-50 p-5 rounded-xl border border-gray-100 shadow-inner"
+            >
+              <li class="flex items-center">
+                <span class="w-1.5 h-1.5 rounded-full bg-gray-400 mr-3"></span
+                >Create a new monday.com <strong>Workflow</strong>.
+              </li>
+              <li class="flex items-center">
+                <span class="w-1.5 h-1.5 rounded-full bg-gray-400 mr-3"></span
+                >Select your trigger (e.g., "When status changes to...").
+              </li>
+              <li class="flex items-center">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400 mr-3"></span
+                >Choose action: <strong>"SMS & Drip: Smart Stopper"</strong>.
+              </li>
+            </ul>
+            <div
+              class="rounded-xl overflow-hidden border border-gray-200/70 shadow-md transform transition-transform hover:scale-[1.02] duration-300"
+            >
+              <img
+                src="sequence-stopper.png"
+                alt="Smart Stopper Action"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-gray-100 mb-10" />
+
+        <!-- Feature C: Send One Message -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="p-2 bg-blue-50 text-blue-500 rounded-lg">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">C. Send One Message</h3>
+          </div>
+          <div class="ml-11">
+            <p class="mb-4 text-gray-600">
+              Send an ad-hoc, instantly customized message directly via board
+              automation.
+            </p>
+
+            <div
+              class="bg-gray-50 rounded-xl p-5 border border-gray-100 mb-6 shadow-inner"
+            >
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-center">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gray-400 mr-3"></span
+                  >Create a new monday.com <strong>Workflow</strong>.
+                </li>
+                <li class="flex items-center">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gray-400 mr-3"></span
+                  >Select your trigger (e.g., "When status changes to...").
+                </li>
+                <li class="flex items-center">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-400 mr-3"></span
+                  >Choose action: <strong>"SMS & Drip: Send Message"</strong>.
+                </li>
+              </ul>
+
+              <div
+                class="mt-4 bg-white border border-gray-100 rounded-lg p-4 shadow-sm"
+              >
+                <p class="font-semibold text-gray-800 mb-2 text-sm">
+                  Map required fields:
+                </p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-green-500 mt-0.5 mr-2 outline-none border-none"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <strong>Columns:</strong> Map Board ID, Item ID, and Phone
+                    Column.
+                  </li>
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-green-500 mt-0.5 mr-2 outline-none border-none"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <strong>Settings:</strong> Select Twilio account and type
+                    your message natively in the action block.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="rounded-xl overflow-hidden border border-gray-200/70 shadow-md transform transition-transform hover:scale-[1.02] duration-300"
+            >
+              <img
+                src="send-message.png"
+                alt="Send Message Action"
+                class="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- 3. Replies & Webhooks (Crucial for Compliance) -->
-      <section class="mb-12">
-        <h2
-          class="text-2xl font-bold mb-4 flex items-center gap-2"
-          style="color: #9d50bb"
-        >
-          3. Replies & Webhooks
+      <!-- 3. Replies & Webhooks -->
+      <section
+        class="glass-card rounded-2xl shadow-sm border border-gray-200/60 p-8 mb-8 transition-all duration-300 hover:shadow-md relative overflow-hidden group"
+      >
+        <div
+          class="absolute top-0 left-0 w-1.5 h-full bg-yellow-400 rounded-l-2xl transform origin-left transition-transform group-hover:scale-y-110"
+        ></div>
+
+        <h2 class="text-2xl font-bold mb-6 flex items-center text-gray-900">
+          <span
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-100 text-yellow-700 text-lg mr-4 pb-0.5"
+            >3</span
+          >
+          Replies & Webhooks
         </h2>
-        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
-          <p class="text-sm text-yellow-800">
-            <strong>Important:</strong> We can only enforce compliance
-            (STOP/UNSUBSCRIBE) if we receive the replies. This requires a
-            properly configured webhook.
+
+        <div
+          class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6 shadow-inner flex items-start"
+        >
+          <svg
+            class="w-6 h-6 text-amber-500 mr-3 mt-0.5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          <p class="text-sm text-amber-800 leading-relaxed">
+            <strong class="font-bold text-amber-900 block mb-1"
+              >Important Compliance Requirement:</strong
+            >
+            We can only enforce compliance (STOP/UNSUBSCRIBE) if we receive
+            replies back to your number. This absolutely requires a properly
+            configured webhook in Twilio.
           </p>
         </div>
 
-        <p class="mb-4 leading-relaxed text-gray-700">
-          Our system attempts to auto-configure your Twilio number. If you have
-          an existing webhook, we will <strong>NOT</strong> override it.
+        <p class="mb-5 text-gray-700 leading-relaxed">
+          Our system securely attempts to auto-configure your Twilio number the
+          first time you use it. If you already have an existing webhook
+          populated, we will <strong>NOT</strong> override it to protect your
+          existing integrations.
         </p>
 
-        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-          <p class="mb-2 font-semibold">Manual Configuration:</p>
-          <p class="mb-2 text-sm text-gray-600">
-            If replies are not working, manually set the "Messaging Webhook" URL
-            in your Twilio Console to:
-          </p>
-          <code
-            class="block p-3 rounded text-sm break-all bg-gray-100 text-gray-800 border border-gray-200"
-          >
-            https://live1-service-33080281-d3a8e938.us.monday.app/api/twilio/reply
-          </code>
+        <div
+          class="bg-slate-900 text-white rounded-xl overflow-hidden shadow-lg border border-slate-700"
+        >
+          <div class="bg-slate-800 px-4 py-3 flex items-center">
+            <div class="flex gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-400"></div>
+              <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+              <div class="w-3 h-3 rounded-full bg-green-400"></div>
+            </div>
+            <p class="ml-4 text-xs text-slate-400 font-medium">
+              Manual Webhook Configuration
+            </p>
+          </div>
+          <div class="p-5">
+            <p class="mb-3 text-sm text-slate-300">
+              If replies are not seamlessly working, manually set the "Messaging
+              Webhook" URL in your Twilio Console to:
+            </p>
+            <code
+              class="block font-mono text-sm bg-slate-950/50 p-4 rounded-lg text-emerald-400 border border-slate-700 break-all shadow-inner"
+            >
+              https://live1-service-33080281-d3a8e938.us.monday.app/api/twilio/reply
+            </code>
+          </div>
         </div>
       </section>
 
       <!-- 4. Compliance -->
-      <section class="mb-8">
-        <h2
-          class="text-2xl font-bold mb-4 flex items-center gap-2"
-          style="color: #9d50bb"
-        >
-          4. Compliance
+      <section
+        class="glass-card rounded-2xl shadow-sm border border-gray-200/60 p-8 mb-8 transition-all duration-300 hover:shadow-md relative overflow-hidden group"
+      >
+        <div
+          class="absolute top-0 left-0 w-1.5 h-full bg-green-500 rounded-l-2xl transform origin-left transition-transform group-hover:scale-y-110"
+        ></div>
+
+        <h2 class="text-2xl font-bold mb-6 flex items-center text-gray-900">
+          <span
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-700 text-lg mr-4 pb-0.5"
+            >4</span
+          >
+          Compliance & Safety
         </h2>
-        <p class="mb-4 leading-relaxed text-gray-700">
-          Once webhooks are active, we handle compliance automatically.
+        <p class="mb-5 text-gray-600 text-lg">
+          Once your webhooks are actively syncing, our system handles carrier
+          compliance automatically behind the scenes.
         </p>
-        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-          <p class="font-semibold mb-2">Opt-Out Keywords:</p>
-          <ul class="list-none space-y-2 mb-2 text-sm text-gray-600">
-            <li>
-              If a user replies with <strong>STOP</strong>,
-              <strong>UNSUBSCRIBE</strong>, or <strong>CANCEL</strong>:
+        <div
+          class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm"
+        >
+          <p class="font-bold text-gray-800 mb-4 flex items-center">
+            <svg
+              class="w-5 h-5 text-gray-400 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+              ></path>
+            </svg>
+            Automatic Opt-Out Keywords
+          </p>
+          <div
+            class="bg-white p-4 rounded-lg border border-gray-100 mb-4 inline-block shadow-sm"
+          >
+            <p class="text-sm font-medium text-gray-600 mb-2">
+              If a user replies with any of these standard terms:
+            </p>
+            <div class="flex gap-2 font-mono text-sm">
+              <span
+                class="px-2.5 py-1 bg-red-100 text-red-700 rounded-md font-bold shadow-sm border border-red-200"
+                >STOP</span
+              >
+              <span
+                class="px-2.5 py-1 bg-red-100 text-red-700 rounded-md font-bold shadow-sm border border-red-200"
+                >UNSUBSCRIBE</span
+              >
+              <span
+                class="px-2.5 py-1 bg-red-100 text-red-700 rounded-md font-bold shadow-sm border border-red-200"
+                >CANCEL</span
+              >
+            </div>
+          </div>
+          <ul class="space-y-4 mt-4">
+            <li class="flex items-start">
+              <div class="bg-green-100 p-1 rounded-full mr-3 mt-0.5">
+                <svg
+                  class="w-4 h-4 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-gray-700"
+                >Future automated sequences are
+                <strong>blocked immediately</strong> for that contact to ensure
+                rigorous compliance.</span
+              >
             </li>
-            <li class="pl-4">✓ Future messages are blocked immediately.</li>
-            <li class="pl-4">
-              ✓ Item status on your board updates to "Unsubscribed".
+            <li class="flex items-start">
+              <div class="bg-green-100 p-1 rounded-full mr-3 mt-0.5">
+                <svg
+                  class="w-4 h-4 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-gray-700"
+                >Item status natively updates to
+                <span
+                  class="bg-gray-100 px-2 py-0.5 rounded text-sm font-semibold border border-gray-200 shadow-sm ml-1 mr-1"
+                  >Unsubscribed</span
+                >
+                on your board for clean data tracking.</span
+              >
             </li>
           </ul>
         </div>
