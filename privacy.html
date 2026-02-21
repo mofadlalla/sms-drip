@@ -40,7 +40,7 @@
 
       <h1 class="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
       <p class="text-gray-500 mb-10">
-        <strong>Last Updated:</strong> January 9, 2026
+        <strong>Last Updated:</strong> February 20, 2026
       </p>
 
       <div class="prose prose-indigo max-w-none">
@@ -68,20 +68,28 @@
             <strong>Twilio Credentials:</strong>
             <ul class="list-circle pl-6 mt-2 space-y-1">
               <li>
-                <strong>Data Stored:</strong> Account SID, Auth Token, and
-                Sender Phone Number.
+                <strong>Data Storage:</strong> We <strong>do not</strong> store
+                your Twilio Account SID, Auth Token, or Sender Phone Number in
+                our database.
               </li>
               <li>
-                <strong>Security:</strong> All credentials are stored using
-                <strong>AES-256 encryption</strong>. We never store your Auth
-                Token in plain text.
+                <strong>Security:</strong> Your Twilio credentials are kept
+                securely on the monday.com platform. They are only transmitted
+                to us temporarily within encrypted payloads during automation
+                executions.
               </li>
               <li>
-                <strong>Purpose:</strong> Storage is strictly required to
-                execute scheduled drip campaigns and background automations on
-                your behalf.
+                <strong>Purpose:</strong> Used exclusively in memory to execute
+                SMS deliveries and sequence steps on your behalf.
               </li>
             </ul>
+          </li>
+          <li>
+            <strong>Session & Communication Data:</strong> We temporarily track
+            active communication sessions to handle two-way messaging (SMS
+            replies). All sensitive identifiers for these sessions (such as
+            phone numbers and Account SIDs) are securely <strong>hashed</strong>
+            (one-way). We do not store plain-text phone numbers in our database.
           </li>
           <li>
             <strong>Automation Data:</strong> We process board data (phone
@@ -116,20 +124,41 @@
           <li><strong>Upstash:</strong> Secure Session & Queue Management.</li>
         </ul>
 
-        <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Security</h3>
-        <p class="text-gray-600 mb-6">
-          All data in transit is protected via HTTPS/TLS. Sensitive secrets
-          (Auth Tokens) are stored using
-          <strong>AES-256 encryption</strong> at rest.
+        <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+          5. Security & User Rights
+        </h3>
+        <p class="text-gray-600 mb-4">
+          We take the security of your data seriously and strictly enforce the
+          following practices:
         </p>
+        <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+          <li>
+            <strong>Encryption:</strong> All data in transit is protected via
+            industry-standard HTTPS/TLS. Sensitive secrets (like OAuth Tokens)
+            are stored using <strong>AES-256 encryption</strong> at rest.
+          </li>
+          <li>
+            <strong>Data Minimization:</strong> We only collect, process, and
+            retain the absolute minimum amount of data necessary to provide our
+            services. Your Twilio credentials and end-user phone numbers are
+            securely hashed or kept off our database entirely.
+          </li>
+          <li>
+            <strong>Your Rights:</strong> In accordance with global privacy
+            frameworks (such as GDPR and CCPA), you have the right to request
+            access to, modification of, or deletion of your personal data.
+            Uninstalling the app will automatically cascade a deletion request
+            to completely remove your account details from our systems.
+          </li>
+        </ul>
 
         <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">6. Contact</h3>
         <p class="text-gray-600">
           For privacy concerns, please contact us at:
           <a
-            href="mailto:mofadlalla10@gmail.com"
+            href="mailto:support@mofadlalla.io"
             class="text-indigo-600 hover:text-indigo-800"
-            >mofadlalla10@gmail.com</a
+            >support@mofadlalla.io</a
           >
         </p>
       </div>
