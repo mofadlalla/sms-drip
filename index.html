@@ -67,12 +67,14 @@
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-          <div class="flex-shrink-0 flex items-center group cursor-pointer">
+          <div
+            class="flex-shrink-0 flex items-center group cursor-pointer mr-2"
+          >
             <h1
-              class="text-2xl font-extrabold tracking-tight text-gray-900 transition-transform group-hover:scale-[1.02]"
+              class="text-xl sm:text-2xl font-extrabold tracking-tight text-gray-900 transition-transform group-hover:scale-[1.02]"
             >
               SMS & Drip
-              <span class="gradient-text ml-1 relative">
+              <span class="gradient-text ml-1 relative hidden sm:inline-block">
                 for Twilio
                 <span
                   class="absolute -bottom-1 left-0 w-full h-0.5 brand-gradient rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
@@ -80,20 +82,20 @@
               </span>
             </h1>
           </div>
-          <div class="flex items-center space-x-8">
+          <div class="flex items-center space-x-3 sm:space-x-4 md:space-x-8">
             <a
               href="how-to-use.html"
-              class="text-gray-600 hover:text-indigo-600 font-medium transition-colors"
+              class="hidden md:inline-block text-gray-600 hover:text-indigo-600 font-medium transition-colors"
               >How to Use</a
             >
             <a
               href="pricing.html"
-              class="text-gray-600 hover:text-indigo-600 font-medium transition-colors"
+              class="hidden sm:inline-block text-gray-600 hover:text-indigo-600 font-medium transition-colors"
               >Pricing</a
             >
             <a
               href="https://auth.monday.com/oauth2/authorize?client_id=608fd218839ef69234d8bebfd7825d57&response_type=install"
-              class="inline-flex items-center px-6 py-2.5 border border-transparent text-sm font-bold rounded-full shadow-md shadow-indigo-200 text-white brand-gradient hover:brand-gradient-hover hover:shadow-lg transform hover:-translate-y-0.5 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-2.5 border border-transparent text-sm font-bold rounded-full shadow-md shadow-indigo-200 text-white brand-gradient hover:brand-gradient-hover hover:shadow-lg transform hover:-translate-y-0.5 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 whitespace-nowrap"
             >
               Install Now
             </a>
@@ -130,16 +132,16 @@
         </div>
 
         <h1
-          class="text-5xl tracking-tight font-extrabold text-gray-900 sm:text-6xl md:text-7xl mb-8 leading-tight"
+          class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl mb-6 sm:mb-8 leading-tight"
         >
           Automate SMS Campaigns<br class="hidden lg:block" />
           <span class="gradient-text pb-2 inline-block"
-            >directly from your board</span
+            >directly from your workspace</span
           >
         </h1>
 
         <p
-          class="mt-4 max-w-2xl mx-auto text-xl text-gray-600 mb-12 leading-relaxed"
+          class="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-gray-600 mb-10 sm:mb-12 leading-relaxed"
         >
           Supercharge your CRM with the reliability of Twilio. Reach customers
           where they are, stop losing leads, and run your entire SMS strategy
@@ -151,7 +153,7 @@
         >
           <a
             href="https://auth.monday.com/oauth2/authorize?client_id=608fd218839ef69234d8bebfd7825d57&response_type=install"
-            class="w-full sm:w-auto flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-white brand-gradient hover:brand-gradient-hover shadow-xl shadow-indigo-200/50 transform hover:-translate-y-1 transition-all"
+            class="w-full sm:w-auto flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold rounded-full text-white brand-gradient hover:brand-gradient-hover shadow-xl shadow-indigo-200/50 transform hover:-translate-y-1 transition-all"
           >
             Get Started Free
             <svg
@@ -167,31 +169,6 @@
                 d="M14 5l7 7m0 0l-7 7m7-7H3"
               ></path>
             </svg>
-          </a>
-          <a
-            href="how-to-use.html"
-            class="w-full sm:w-auto flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-gray-700 bg-white border border-gray-200 hover:bg-gray-50 hover:border-gray-300 shadow-sm transition-all group"
-          >
-            <svg
-              class="mr-2 w-5 h-5 text-gray-400 group-hover:text-indigo-500 transition-colors"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
-            </svg>
-            See How it Works
           </a>
         </div>
       </div>
@@ -239,20 +216,11 @@
             </div>
           </div>
           <!-- Screenshot Area -->
-          <div class="bg-gray-100 overflow-hidden relative group">
-            <div
-              class="absolute inset-0 bg-indigo-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center"
-            >
-              <a
-                href="how-to-use.html"
-                class="bg-white text-gray-900 px-6 py-3 rounded-full font-bold shadow-xl border border-gray-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-gray-50"
-                >Explore Features</a
-              >
-            </div>
+          <div class="bg-gray-100 overflow-hidden relative">
             <img
               src="campaign-builder.png"
               alt="SMS & Drip Campaign Builder Interface"
-              class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700"
+              class="w-full h-auto object-cover"
             />
           </div>
         </div>
@@ -521,11 +489,11 @@
         class="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
         <h2
-          class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight"
+          class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight"
         >
-          Ready to automate you SMS workflows?
+          Ready to automate your SMS workflows?
         </h2>
-        <p class="text-xl text-indigo-100 mb-10 max-w-2xl mx-auto">
+        <p class="text-lg sm:text-xl text-indigo-100 mb-10 max-w-2xl mx-auto">
           Join the growing number of businesses scaling their automated outreach
           smoothly on monday.com.
         </p>
@@ -543,7 +511,7 @@
       <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="md:flex md:items-center md:justify-between">
           <div
-            class="flex justify-center md:justify-start space-x-6 md:order-2"
+            class="flex flex-wrap justify-center gap-4 space-x-0 md:space-x-6 md:justify-start md:order-2"
           >
             <a
               href="privacy.html"
